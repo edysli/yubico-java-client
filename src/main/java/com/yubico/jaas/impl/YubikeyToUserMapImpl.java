@@ -63,11 +63,9 @@ public class YubikeyToUserMapImpl implements YubikeyToUserMap {
 	public static final String OPTION_YUBICO_AUTO_PROVISION		= "auto_provision_owner";
 	public static final String OPTION_YUBICO_ID2NAME_TEXTFILE	= "id2name_textfile";
 	public static final String OPTION_YUBICO_VERIFY_YK_OWNER	= "verify_yubikey_owner";
-
 	private String id2name_textfile;
 	private boolean auto_provision_owners = false;
 	private boolean verify_yubikey_owner = true;
-
 	private final Logger log = LoggerFactory.getLogger(YubikeyToUserMapImpl.class);
 
 	/** {@inheritDoc} */

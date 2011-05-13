@@ -41,20 +41,20 @@ import java.util.Map;
  */
 public interface YubikeyToUserMap {
 
-    /*
-     * Verify that there is a known connection between username and publicId.
-     * If auto-provisioning is enabled and no connection is found, one is registered.
-     *
-     * @param username username to match to YubiKey id
-     * @publicId modhex encoded public id of a YubiKey (e.g. "vvcccccfhc")
-     *
-     */
-    public boolean is_right_user(String username, String publicId);
-
-    /**
-     * Sets configuration options received from JAAS.
-     *
-     * @param options  Configuration options
-     */
-    public void setOptions(Map<String, ?> options);
+	/**
+	 * Verify that there is a known connection between username and publicId.
+	 * If auto-provisioning is enabled and no connection is found, one is registered.
+	 *
+	 * @param username username to match to YubiKey id
+	 * @publicId modhex encoded public id of a YubiKey (e.g. "vvcccccfhc")
+	 *
+	 */
+	public boolean is_right_user(String username, String publicId);
+	
+	/**
+	 * Sets configuration options received from JAAS.
+	 *
+	 * @param options  Configuration options
+	 */
+	public void setOptions(Map<String, ?> options);
 }
